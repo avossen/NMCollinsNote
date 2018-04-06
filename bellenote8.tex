@@ -1,0 +1,188 @@
+%\textbf{%\documentclass[english,aps,prc,showpacs,superscriptaddress]{revtex4}
+%\documentclass[english,showpacs,aps,prl,superscriptaddress]{revtex4}
+%\documentclass[english,aps,prl,superscriptaddress,twocolumn,showkeys,floatfix]{revtex4-1}
+%\documentclass[english,aip,preprint]{revtex4-1}
+
+\documentclass[english,notitlepage,12pt,a4paper]{article}
+%\documentclass[english,12pt,a4paper]{report}
+%\usepackage[T1]{fontenc}
+%\usepackage[latin9]{inputenc}
+\usepackage{graphicx,subfigure}
+\usepackage{adjustbox}
+\usepackage{nicefrac}
+\usepackage{slashed}
+\usepackage{upgreek}
+\usepackage{pdflscape}
+\usepackage{titlesec}
+\usepackage{multirow}
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+%\usepackage{caption}
+\usepackage[font=scriptsize]{caption}
+%\usepackage{epstopdf}
+%\usepackage{amssymb}
+%\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[fleqn]{amsmath}
+%\setlength{\mathindent}{0pt}
+\usepackage{amsfonts,amssymb,amsthm,epsfig,epstopdf,titling,url,array}
+\usepackage{float}
+%\usepackage{color}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{bm}
+\usepackage{authblk}
+\usepackage{lineno}
+\linenumbers
+\usepackage{pgfplots}
+% and optionally (as of Pgfplots 1.3):
+\pgfplotsset{compat=newest}
+\pgfplotsset{plot coordinates/math parser=false}
+\newlength\figureheight
+\newlength\figurewidth
+%\usepackage{mwe} % new package from Martin scharrer
+\usepackage{setspace}
+\overfullrule=1mm
+\makeatletter
+\usepackage[pdfencoding=auto,psdextra]{hyperref}
+\usepackage{cleveref}
+\usepackage{hyperref}
+\usepackage{babel}
+\usepackage{diagbox}
+
+\usepackage{amssymb,amsmath}
+\usepackage{array}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+%\ListProperties(Hide=100, Hang=true, Progressive=3ex, Style*=-- ,Style2*=$\bullet$ ,Style3*=$\circ$ ,Style4*=\tiny$\blacksquare$ )
+%\makeatother
+\usepackage{float}
+
+\usepackage{vhistory}
+
+\usepackage{lipsum}% <- For dummy text
+%\definechangesauthor[name={Per cusse}, color=orange]{per}
+%\setremarkmarkup{(#2)}
+
+\renewcommand\Authands{ and }
+
+\usepackage{fancyhdr, graphicx}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[L]{}
+\fancyhead[R]{ Bellenote\#1384 \\Version 8.0  \\ \today }
+
+\begin{document}
+%\lipsum[1-7]
+\begin{versionhistory}
+  \vhEntry{1.0}{06.1815}{Hairong}{Created}
+  \vhEntry{2.0}{10.20.15}{Hairong}{Add the regenerated method of smearing correction}
+  \vhEntry{3.0}{11.13.15}{Hairong}{Revised after Gunar's and Megumi's comments}
+  \vhEntry{4.0}{01.13.16}{Hairong}{Update the new cuts (section 2.4~2.5)}
+  \vhEntry{4.1}{01.25.16}{Hairong}{Implemented Gunar's comments about the Observable section of version 4.0}
+  \vhEntry{4.2}{01.25.16}{Hairong}{Implemented Gunar's comments about the sections 2.3-2.5 of version 4.0. The changes include some textual errors, correcting on Eq.(24), and new plots of zptbins (Fig.9)}
+  \vhEntry{4.3}{02.18.2016}{Hairong}{Update the background and smearing correction. The method of study background correction remains the same while the ptbin migration now be considered in smearing correction}
+  \vhEntry{5.0}{03.30.2016}{Hairong}{Implemented Will's comments about the beginning parts. Besides the tables in summary section, all results are result from the rerun. New smearing correction simulation method is used and the correction is based on stable thrust axis instead of qq axis.}
+  \vhEntry{5.1}{05.10.2016}{Hairong}{remove lowest z bin. Smearing correction factors are obtained using pt dependent injection asymmetry.}
+    \vhEntry{5.2}{06.01.2016}{Hairong}{Add the comparison between the signal asymmetries obtained by different fitting methods. }
+    \vhEntry{5.2.1}{06.03.2016}{Hairong}{Modified according to Gunar's comments, including grammar, spelling errors and ambiguous descriptions. }
+     \vhEntry{5.3}{06.18.2016}{Hairong}{Add tables including all statistical and systematic uncertainties. Modified according to comments from Gunar and Will}
+      \vhEntry{5.3.1}{06.23.2016}{Hairong}{Add list of tables, some minor corrects to v5.3}
+       \vhEntry{6}{08.08.2016}{Hairong}{Add zpt results}
+       \vhEntry{7}{02.11.2011}{Hairong}{Correct background correction results mistakenly used the signal region data for the leftmost background bin before)}
+       \vhEntry{7.1}{05.19.2017}{Anselm}{Update tables with bg corrected results from previous version, removed uncertainty tables, they now reside on the analysis indico page . Implemented Gunar's comments from May 11 addendum: This version also uses 20\% statistics that were missed in the previous analysis run.}       
+       \vhEntry{7.2}{06.28.2017}{Anselm}{Implement various comments from Gunar \& Will}
+        \vhEntry{7.3}{07.13.2017}{Anselm}{Updated result tables and plots with new results following update on asymmetry and systematic calculation. Extended description of systematic studies}
+        \vhEntry{7.4}{07.24.2017}{Anselm}{Included Gunar's comments from 7/18}
+        \vhEntry{7.5}{10.25.2017}{Anselm}{Streamlined text of chapter 2 onwards}
+        
+       \vhEntry{8.0}{12.15.2017}{Anselm}{Implemented Will and Gunar's comments}        
+\end{versionhistory}
+
+\thispagestyle{fancy}
+
+\title{Extraction of azimuthal asymmetries in di-hadron production including neutral mesons}
+\author[1]{Hairong Li}
+\author[1]{Anselm Vossen}
+%\author[2]{Francesca Giordano}
+%\author[3]{Ralf Seidl}
+%\author[1]{William Jacobs}
+%\author[2]{Matthias Grosse-Perdekamp}
+%\author[4]{Noriaki Kobayashi}
+%\author[4]{Yoshiyuki Miyachi}
+%\author[5]{Charlotte Van Hulse}
+%\author[5]{Gunar Schnell}
+%\author[4]{Toshi-Aki Shibata}
+%\author[6]{Akio Ogawa}
+%\author[7]{Ami Rostomyan}
+\affil[1]{Indiana University at Bloomington, USA}
+%\affil[2]{University of Illinois at Urbana-Champaign,USA}
+%\affil[3]{RIKEN, Japan}
+%\affil[4]{Tokoyo Insititute of Technology, Japan}
+%\affil[5]{The University of the Basque Country, Spain}
+%\affil[6]{Brookhaven National Laboratory, USA}
+%\affil[7]{DESY, Hamburg, Germany}
+
+\date{\today}
+\maketitle
+\thispagestyle{fancy}
+%%%%%%%%%%%
+\begin{abstract}
+\begin{small}%\textbf{Abstract}
+
+Large transverse single spin asymmetries $A_N$ have been observed in both Semi-inclusive Deep Inelastic Scattering~(SIDIS) and polarized pp collisions, and Collins fragmentation functions~(Collins FF)  have been proposed as a possible mechanism for these asymmetries. The Collins FF describes the azimuthal distribution of hadrons that are produced in the fragmentation of a transversely polarized quark. Measurement of the Collins FF for $\pi^{0}$ and $\eta$ provides information on the flavor dependence of the Collins effect and can probe the mechanism behind the observed difference of $A_N$ in p+p collisions for $\pi^{0}$ and $\eta$ inclusive production. This note reports on the measurement of azimuthal asymmetries from which the Collins FF can be extracted for $\pi^{0}$ and $\eta$. And charged pion result under the same data criteria is also displayed for comparison. The $980$ fb\textsuperscript{-1} dataset used in this study is collected from Belle Experiments [7;73]. The Monte Carlo besides section~\ref{sec:charmcontribution} are Belle \textsc{\char13}uds\textsc{\char13} streams from Experiment [7,73]. In  section~\ref{sec:charmcontribution} both Belle \textsc{\char13}charm\textsc{\char13} stream and \textsc{\char13}uds\textsc{\char13} stream are used. 
+
+%\bigskip`
+\end{small}
+\end{abstract}
+
+\newpage
+\tableofcontents
+
+\newpage
+  \listoffigures
+     \listoftables
+     
+\newpage
+
+\include{chapters/section1}
+
+\include{chapters/section2}
+
+\include{chapters/section3}
+
+\include{chapters/section4}
+
+\include{chapters/section5}
+
+\include{chapters/section6}
+
+\include{chapters/section7}
+
+%########################################################################################################
+\appendix
+\label{sec:appendix}
+\section*{Appendices}
+\addcontentsline{toc}{section}{Appendices}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\include{chapters/appendix1}
+\include{chapters/appendix2}
+\include{chapters/appendix3}
+\section{Numerical Values for the Asymmetries}
+Below we show the printout of the excel sheet with the final values for the various asymmetries and statistical and systematic uncertainties (need to zoom in the pdf).
+\includegraphics[width=0.99\textwidth]{FinalResult_2017_BugfixedJuly3_2017_Relabelled2_Page.pdf}
+
+
+
+
+%\include{chapters/appendix4}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%\clearpage
+%\bibliographystyle{apsrev4-1-JHEPfix}
+\bibliography{Citations}
+\bibliographystyle{ieeetr}
+\end{document}
+

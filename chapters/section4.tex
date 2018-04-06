@@ -47,7 +47,8 @@ Once $A_{bkg}$ is obtained, the signal asymmetry $A_{signal}$ can be accessed th
 A_{measured}=P\times A_{signal}+(1-P )\times A_{bkg}
 \label{eqn:bkgcorr}
 \end{equation}
-P is the purity of the $\pi^0$ ($\eta$). We observe that the background asymmetry is actually close to the asymmetry measured in the  signal range. This means that the effect of the background correction on the central values of the asymmetries is small and it mainly leads to an increas in the uncertainties. One explanation, referring to the decomposition in Fig.~\ref{fig:pi0_component}, is that the combinatorial background from different $\pi^0$ mesons in the same jet carries a significant Collins asymmetry.
+P is the purity of the $\pi^0$ ($\eta$). We observe that the background asymmetry is actually close to the asymmetry measured in the  signal range. This means that the effect of the background correction on the central values of the asymmetries is small and it mainly leads to an increas in the uncertainties. One explanation is that the measured asymmetries are dominated by the charged pion asymmetries in the denominator which are the same in the sideband and the signal region.
+ %referring to the decomposition in Fig.~\ref{fig:pi0_component}, is that the combinatorial background from different $\pi^0$ mesons in the same jet carries a significant Collins asymmetry.
 
 Fig.~\ref{fig:pi0afterbkg} show the Collins asymmetries after background correction.
 
@@ -321,7 +322,7 @@ Also, a bug was discovered in the background correction that still affects these
   \subfigure[$P_{t1}$ bins]{\label{fig:pi0result3}\includegraphics[width=60mm,natwidth=600,natheight=400]{figure_asy/Pi0AllCorrection2.pdf}}
   \subfigure[$(z_1,z_2)$ bins]{\label{fig:pi0result2}\includegraphics[width=60mm,natwidth=600,natheight=400]{figure_asy/Pi0AllCorrection1.pdf}}
   \subfigure[$(P_{t1},P_{t2})$ bins]{\label{fig:pi0result4}\includegraphics[width=60mm,natwidth=600,natheight=400]{figure_asy/Pi0AllCorrection3.pdf}}
-  \caption{$\pi^0$ double ratio asymmetries $A^{\pi^0}_{12}$ for different kinematic bins. The triangle points are the originally measured asymmetry. Round points are asymmetries after background corrections. Cross points are asymmetries after background and thrust smearing correction, and the uncertainties include background and smearing corrections.}
+  \caption{$\pi^0$ double ratio asymmetries $A^{\pi^0}_{12}$ for different kinematic bins. The triangle points are the originally measured asymmetry. Round points are asymmetries after background corrections. Cross points are asymmetries after background and thrust smearing correction, and the uncertainties include background and smearing corrections. {\bf Note that the results in these plots use an incorrect background subtraction, see text for details}}
   \label{fig:pi0result}
 \end{figure}
 
@@ -331,7 +332,7 @@ Also, a bug was discovered in the background correction that still affects these
   \subfigure[$P_{t1}$ bins]{\label{fig:etaresult3}\includegraphics[width=60mm,natwidth=600,natheight=400]{figure_asy/EtaAllCorrection2.pdf}}
   \subfigure[$(z_1,z_2)$ bins]{\label{fig:etaresult2}\includegraphics[width=60mm,natwidth=600,natheight=400]{figure_asy/EtaAllCorrection1.pdf}}
   \subfigure[$(P_{t1},P_{t2})$ bins]{\label{fig:etaresult4}\includegraphics[width=60mm,natwidth=600,natheight=400]{figure_asy/EtaAllCorrection3.pdf}}
-  \caption{$\eta$ double ratio asymmetries $A^{\eta}_{12}$ for different kinematic bins. The triangle points are the originally measured asymmetry. Square points are asymmetries after background corrections. Diamond points are asymmetries after background and thrust smearing correction. The uncertainties include the systematics from background and smearing correction.}
+  \caption{$\eta$ double ratio asymmetries $A^{\eta}_{12}$ for different kinematic bins. The triangle points are the originally measured asymmetry. Square points are asymmetries after background corrections. Diamond points are asymmetries after background and thrust smearing correction. The uncertainties include the systematics from background and smearing correction. {\bf Note that the results in these plots use an incorrect background subtraction, see text for details}}
   \label{fig:etaresult}
 \end{figure}
 
@@ -339,7 +340,7 @@ Also, a bug was discovered in the background correction that still affects these
 \subsection{Charm contribution}
 \label{sec:charmcontribution}
 The contribution of charm fragmentation to the charged pion Collins asymmetry has been studied in ~\cite{ChargedPionResult2}. 
-Here the proportion of charm for each kinematic bin is estimated by using the standard Belle MC. The yield of each hadron pair in MC uds and MC charm has been determined for each bin. So we determine the ratio $\nicefrac{\mathrm{charm}}{\mathrm{uds}}$ for each bin using the same cuts as in the analysis. Results show that the percentage of charm contributions are close, within 2\% with the exception of the first $z$ bin where asymmetries are small, in all charged and neutral pion pairs and their mean value is used to stand for the charm ratio. The charm percentage contribution in each bin is listed below and no correction is made because the extraction of the charm signal from $D^0$s would not be precise. Once further studies of the Collins effect for charm have become available, for example at Belle II, the following ratios will allow corrections in global fits. 
+Here the proportion of charm for each kinematic bin is estimated by using the standard Belle MC. The yield of each hadron pair in MC uds and MC charm has been determined for each bin. So we determine the ratio $\nicefrac{\mathrm{charm}}{\mathrm{uds}}$ for each bin using the same cuts as in the analysis. Results show that the percentage of charm contributions are close, within 2\% with the exception of the first $z$ bin where asymmetries are small, in all charged and neutral pion pairs and their mean value is used to stand for the charm ratio. The charm percentage contribution in each bin is listed below and no correction is made because the extraction of the charm signal from $D^0$s would not be precise. Once further studies of the Collins effect for charm have become available, for example at Belle II, the following ratios will in principle allow corrections in global fits, however, we acknowledge that for the optimal correction matching the respective phase spaces will be challenging.
 We note that in general the charm fractions of pairs including $\eta$ mesons tend to be somewhat higher than the fractions involving only pions. This effect is more pronounced at larger $z$ and large $P_t$. For most bins the difference is not more than 5\%. If we assume that particles from charm decay carry a much smaller asymmetry, since they come from a decay chain involving the weak decay of a $D$ meson, this would lead, to first order, to a suppression of the $\eta$ asymmetries with respect to the pion asymmetries by the same percentage.
 
 

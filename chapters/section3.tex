@@ -1,73 +1,81 @@
 \section{Asymmetry Extraction}
- Now that we have discussed our selection criteria for charged pions and $\pi^0$ and $\eta$ mesons, this section discusses the extraction of Collins asymmetries from this sample.%Fig.~\ref{fig:pipiP0phi} shows examples of the Collins angle $\phi_1+\phi_2$ of $\pi^0\pi^+$ pairs. 
-
-As discussed in section~\ref{sec:observable}, we use the double ratio method to cancel effects of the non-uniform acceptance effects.
-Remaining, so-called false asymmetries, are estimated from simulation and discussed in~subsection~\ref{sec:resutlsfrommc}. These will be used to correct the experimental asymmetry and their uncertainties are propagated to our systematic uncertainties.
-The results from experimental data are discussed in subsection~\ref{sec:resultsfromexp}.
+ %Now that we have discussed our selection criteria for charged pions and $\pi^0$ and $\eta$ mesons, t
+ 
+ This section reviews the extraction of Collins asymmetries from the data sample passing all selection criteria discussed in the previous section.
+ %Fig.~\ref{fig:pipiP0phi} shows examples of the Collins angle $\phi_1+\phi_2$ of $\pi^0\pi^+$ pairs. 
+As discussed in Section~\ref{sec:observable}, we use the double-ratio method to cancel effects of non-uniform acceptance effects.
+Remaining so-called false asymmetries are estimated from simulation and discussed in Section~\ref{sec:resutlsfrommc}. 
+They will be used to correct the experimental asymmetry.  Their uncertainties are propagated to the systematic uncertainties.
+The results from experimental data are discussed in Section~\ref{sec:resultsfromexp}.
 
 \subsection{Results from Simulation}
 \label{sec:resutlsfrommc}
-Before moving to asymmetry measurement for the experimental data, we test the residual asymmetries caused by the acceptance using  Monte Carlo data. The Monte Carlo does not contain a Collins effect  so the double ratio asymmetry measured in the signal window should be 0. However, the detector acceptance may generate a dependence of the data on the azimuthal angle $\phi$ similar to the dependence caused by the Collins effect to be measured as shown in Fig.~\ref{fig:differentthetarange} (note that this figure shows the asymmetry before the application of the double ratio) and lead to  so-called false asymmetries. The previously introduced fiducial cuts make this effect smaller but it does not disappear.
-This illustrates again the need for the double ratio method, which almost entirely cancels the remaining false asymmetry as demonstrated below. Any remaining effect 
-is used to correct the experimental asymmetry and the statistical uncertainty of that correction is then propagated to our systematic uncertainties.
+Before moving to asymmetry measurement for the experimental data, we test the residual asymmetries caused by the acceptance using  Monte Carlo data. The Monte Carlo does not contain a Collins effect  so the double ratio asymmetry measured in the signal window should be 0. However, the detector acceptance may generate a dependence of the data on the azimuthal angle $\phi_{12}$ similar to the dependence caused by the Collins effect to be measured, as shown in Fig.~\ref{fig:differentthetarange} (note that  Fig.~\ref{fig:differentthetarange} shows the asymmetry before the application of the double ratio), and leads to false asymmetries. The previously introduced fiducial cuts make this effect smaller but  not to disappear.
+This illustrates the need for the double-ratio method, which almost cancels entirely the false asymmetry. Any remaining effect 
+is used to correct the experimental asymmetry and the statistical uncertainty of that correction is propagated to the systematic uncertainties.
 
-\begin{figure}[H]
+\begin{figure}[b]
     \centering
     \includegraphics[width=0.6\textwidth,natwidth=250,natheight=100]{figure_asy/ComZ_Phi12_pi0.pdf}
     \caption{Asymmetry $A_{12}^{\pi^0}$ in  $(z_1,z_{2})$ bins measured with simulated data.}
     \label{fig:mc_example}
 \end{figure}
-As an example, the $\cos$ fit to the $A_{12}^{\pi^0}=A_{12}^{0\pm}/A_{12}^L$ asymmetry in simulation is shown in Fig.~\ref{fig:mc_example}. This asymmetry can be determined with  higher precision than $A_{12}^{\eta}$ and demonstrates that the remaining false asymmetries are small (detailed results on all false asymmetry can we found in the supporting spreadsheet).
 
-For the final result we correct the asymmetry measured in the experimental data with the false asymmetry obtained from MC and the uncertainty on the false asymmetry will contribute to the systematic uncertainties.
+As an example, the relevant cosine fit to the $A_{12}^{\pi^0}=A_{12}^{0\pm}/A_{12}^L$ asymmetry in simulation is shown in Fig.~\ref{fig:mc_example}. 
+This asymmetry can be determined with  higher precision than $A_{12}^{\eta}$ and demonstrates that the remaining false asymmetries are small (detailed results on all false asymmetry can be found in the supporting spreadsheet summarized in Appendix~\ref{sec:spreadsheet}).
+
+
+
+%For the final result we correct the asymmetry measured in the experimental data with the false asymmetry obtained from MC and the uncertainty on the false asymmetry will contribute to the systematic uncertainties.
 
 \subsection{Results from Experimental Data}
 \label{sec:resultsfromexp}
 \subsubsection{\texorpdfstring{Raw Asymmetry of $\pi^0$ and $\eta$}{Raw Asymmetry of pi0 and eta}}
-Data used in this study encompasses Belle experiments from 7 to 73.
- In Fig.~\ref{fig:exp_pi0_result} we show  $A_{12}^{\pi^0}$ results for the $z_1$, $P_{t1}$, $(z_1,z_2)$ and $(P_{t1},P_{t2})$ binnings. We call these asymmetries `raw' asymmetries, since they have not been corrected for smearing effects or for false asymmetries. 
-In the binnings that are only differential in one variable, we observe significant asymmetries that rise with $z$ and $P_{t}$. This is consistent with previous results in \cite{ChargedPionResult2, ChargedPionResult}.
+Data used in this study encompass Belle experiments  7 to 73.
+Figure~\ref{fig:exp_pi0_result} shows  $A_{12}^{\pi^0}$ results for the $z_1$, $P_{t1}$, $(z_1,z_2)$, and $(P_{t1},P_{t2})$ binning. We call these asymmetries `raw' asymmetries, since they have not been corrected for smearing effects or for false asymmetries. 
+In the binnings that are only differential in one variable, we observe significant asymmetries that rise with $z$ and $P_{t}$. This is consistent with the previous results for charged pions~\cite{ChargedPionResult2, ChargedPionResult}.
 
-The binnings that are differential in the kinematics of both hadrons forming the pair have a more complicated pattern. But it can be easily understood recalling the bin numbering scheme shown in figs.~\ref{fig:z1z2binning} and~\ref{fig:pt1pt2binning}. The extracted datapoints come in groups of five points for which the kinematics of one of the hadrons is held fixed and $z_1$ ( $P_{t1}$ ) of the other hadron increases. Within these groups, we observe a rise in $z_1$ ( $P_{t1}$ ) and mean asymmetry in each group rises with $z_2$ and $P_{t2}$, as expected.
-
-\begin{figure}[H]
+\begin{figure}[t]
   \centering     
     \subfigure[$\pi^0$ $z_1$ bins asymmetry]{\label{fig:exp_singlez}\includegraphics[width=.49\textwidth,natwidth=800,natheight=600]{figure_asy/Pi0NoCorrection0.pdf}}
  \subfigure[$\pi^0$ $P_{t1}$ bins asymmetry]{\label{fig:exp_singlez1}\includegraphics[width=.49\textwidth,natwidth=800,natheight=600]{figure_asy/Pi0NoCorrection2.pdf}}
   \subfigure[$\pi^0$ $(z_1,z_2)$ bins asymmetry]{\label{fig:exp_singlept}\includegraphics[width=.49\textwidth,natwidth=800,natheight=600]{figure_asy/Pi0NoCorrection1.pdf}}
   \subfigure[$\pi^0$ $(P_{t1},P_{t2})$ bins asymmetry]{\label{fig:exp_singlept1}\includegraphics[width=.49\textwidth,natwidth=800,natheight=600]{figure_asy/Pi0NoCorrection3.pdf}}
-  \caption{Experimental $\pi^0$ double ratio asymmetry $\nicefrac{A^{0\pm}_{12}}{A^L_{12}}$}
+  \caption{Experimental $\pi^0$ double-ratio asymmetry $\nicefrac{A^{0\pm}_{12}}{A^L_{12}}$}
   \label{fig:exp_pi0_result}
 \end{figure}
 
-In Fig.~\ref{fig:exp_eta_result} we show the results $A_{12}^{\eta}=A_{12}^{\eta \pm}/A_{12}^L$. Due to the higher mass of the $\eta$, we use the constraint $z> 0.3$, which is applied to all double ratios containing $\eta$ mesons. Again, we observe significant asymmetries in both ($z_1, z_2$ ) and ($P_{t1}$, $P_{t2}$ ) binnings. which are shown in Fig.~\ref{fig:exp_eta_result}. 
-As the statistics are lower, the error bars are larger than for the corresponding $\pi^0$ asymmetries. 
+The result for the 2d binning in \(z_{i}\) (\(P_{ti}\)) has a more complicated pattern. It can be easily understood recalling the bin-numbering scheme shown in Figs.~\ref{fig:z1z2binning} and~\ref{fig:pt1pt2binning}. The extracted data points come in groups of five (four) points for which the kinematics of the second hadron is kept fixed and $z_1$ ($P_{t1}$) of the first hadron increases. Within these groups we observe a rise with $z_1$ ($P_{t1}$) and the average asymmetry in each group rises with $z_2$ and $P_{t2}$, as expected.
+
+
+In Fig.~\ref{fig:exp_eta_result} we show the results $A_{12}^{\eta}=A_{12}^{\eta \pm}/A_{12}^L$. Due to the higher mass of the $\eta$, we use the constraint $z> 0.3$, which is applied to all hadrons in double ratios containing $\eta$ mesons. Again, we observe significant asymmetries, rising both with \(z_i\) and \(P_{ti}\).  As the yields are lower, uncertainties are larger when compared to the corresponding $\pi^0$ asymmetries. 
 \begin{figure}[H]
   \centering     
   \subfigure[$\eta$ $z_1$ bins asymmetry]{\label{fig:exp_singlez_eta}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_asy/EtaNoCorrection0.pdf}}
   \subfigure[$\eta$ $P_{t1}$ bins asymmetry]{\label{fig:exp_comz1_eta}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_asy/EtaNoCorrection2.pdf}}
   \subfigure[$\eta$ $(z_1,z_2)$ bins asymmetry]{\label{fig:exp_singlept_eta}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_asy/EtaNoCorrection1.pdf}}
   \subfigure[$\eta$ $(P_{t1},P_{t2})$ bins asymmetry]{\label{fig:exp_compt1_eta}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_asy/EtaNoCorrection3.pdf}}
-  \caption{Experimental $\eta$ double ratio asymmetry $\nicefrac{A^{\eta\pm}_1}{A^L_1}$}
+  \caption{Experimental $\eta$ double-ratio asymmetry $\nicefrac{A^{\eta\pm}_{12}}{A^L_{12}}$}
   \label{fig:exp_eta_result}
 \end{figure}
 
-\subsubsection{\texorpdfstring{Other Raw Asymmetries}{Other Raw asymmetries}}
+%%%%%%%%%%%%%
+\subsubsection{\texorpdfstring{Other Raw Asymmetries}{Other Raw Asymmetries}}
 
-The difference of the Collins asymmetries for $\eta$ and $\pi^0$ is of interest because the Collins asymmetry may explain the larger transverse single spin asymmetry of $\eta$ observed in $pp$ collisions~\cite{StarTSSA2}. Also, the $\eta$ has strangeness and this may cause a difference in the results  between $\pi^0$ and $\eta$.
+A difference of Collins asymmetries for $\eta$ and $\pi^0$ is of interest because it may explain the larger transverse single-spin asymmetry of $\eta$ observed in $pp$ collisions~\cite{StarTSSA2}. The $\eta$ has strangeness, which may cause such difference.
  
-To compare the asymmetry of $\eta$ and $\pi^0$, a threshold of $0.3$ for $z$ is applied to all hadrons contained in $\pi^0$ double ratio. Fig.~\ref{fig:exp_pi0_eta_result} displays  the comparison between $\pi^0$ and $\eta$ for the fractional-energy constraint of $z>0.3$. 
+To compare asymmetries for $\eta$ and $\pi^0$, a threshold of $0.3$ for $z$ is applied to all hadrons, also for the $\pi^0$ double ratios. Figure~\ref{fig:exp_pi0_eta_result} displays  the comparison of $\pi^0$ and $\eta$ for the fractional-energy constraint $z>0.3$. 
 
-\begin{figure}[H]
+\begin{figure}[t]
   \centering     
   \subfigure[$\pi^0$ and $\eta$ $z_1$ bins asymmetry]{\label{fig:exp_singlez_compare}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_asy/Pi0VsEta0.pdf}}
   \subfigure[$\pi^0$ and $\eta$ $P_{t1}$ bins asymmetry]{\label{fig:exp_comz_compare}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_asy/Pi0VsEta2.pdf}}
   \subfigure[$\pi^0$ and $\eta$ $(z_1,z_2)$ bins asymmetry]{\label{fig:exp_singlept_compare}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_asy/Pi0VsEta1.pdf}}
   \subfigure[$\pi^0$ and $\eta$ $(P_{t1},P_{t2})$ bins asymmetry]{\label{fig:exp_compt_compare}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_asy/Pi0VsEta3.pdf}}
-  \caption{$\pi^0$ double ratio asymmetry $\nicefrac{A^{0\pm}_{12}}{A^L_{12}}$ and $\eta$ double ratio asymmetry $\nicefrac{A^{\eta\pm}_{12}}{A^L_{12}}$. The up pointing triangles are $\eta$ asymmetries and down pointing triangles are $\pi^0$ asymmetries.}
+  \caption[Comparison of \(\pi^{0}\) and \(\eta\) double-ratio asymmetries] {$\pi^0$ double ratio asymmetry $\nicefrac{A^{0\pm}_{12}}{A^L_{12}}$ and $\eta$ double ratio asymmetry $\nicefrac{A^{\eta\pm}_{12}}{A^L_{12}}$. The up pointing triangles are $\eta$ asymmetries and down pointing triangles are $\pi^0$ asymmetries.}
   \label{fig:exp_pi0_eta_result}
 \end{figure}
-The following Fig.~\ref{fig:exp_pi0_eta_ratio} shows the asymmetries of the ratio between $\pi^0$ and $\eta$ asymmetries. Within the uncertainties, the ratio they are consistent with zero. However, at the highest $z$ and $P_t$ values there is a hint of an excess of $A_{12}^\eta$ over the asymmetries constructed with the neutral pion.
+Figure~\ref{fig:exp_pi0_eta_ratio} shows the asymmetries of the $\eta$--$\pi^0$ double ratio. Within the uncertainties the asymmetries are consistent with zero. However, at the highest $z$ and $P_t$ values there is a hint of an excess of $A_{12}^\eta$ over the asymmetries constructed with the neutral pion.
 %Besides the uncertainty caused by statistics, $\pi^0$ shows different asymmetries than $\eta$ at some bins. This could be caused by, eg., the expected difference in the fragmentation of strange quarks or by differences between detection efficiencies of $\pi^0$ and $\eta$. However, this difference is nonsignificant at this stage and more precise conclusion will be discussed after the correction of thrust smearing effect.
 \begin{figure}[H]
   \centering     
@@ -75,7 +83,7 @@ The following Fig.~\ref{fig:exp_pi0_eta_ratio} shows the asymmetries of the rati
    \subfigure[$\pi^0$ over $\eta$ double ratio $P_{t1}$ bins]{\label{fig:exp_comz_ratio}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_asy/Pi0OverEta2.pdf}}
   \subfigure[$\pi^0$ over $\eta$ double ratio $(z_1,z_2)$ bins]{\label{fig:exp_signlept_ratio}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_asy/Pi0OverEta1.pdf}}
   \subfigure[$\pi^0$ over $\eta$ double ratio $(P_{t1},P_{t2})$ bins]{\label{fig:exp_compt_ratio}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_asy/Pi0OverEta3.pdf}}
-  \caption{Asymmetry $\nicefrac{A^{0\pm}_{12}}{A^{\eta\pm}_{12}}$. Note that the legend in the plots is incorrect.}
+  \caption[Asymmetry $\nicefrac{A^{0\pm}_{12}}{A^{\eta\pm}_{12}}$]{Asymmetry $\nicefrac{A^{0\pm}_{12}}{A^{\eta\pm}_{12}}$. Note that the legend in the plots is incorrect.}
   \label{fig:exp_pi0_eta_ratio}
 \end{figure}
 %As will be discussed in section~\ref{sec:comparewpreviouse}, there is an expectation that the UC double ratio written in Eqn.~\ref{eqn:chargeddoubleratio2} is comparable with $\pi^0$ double ratio~\ref{eqn:FF5}. This can be used to test for systematic effects by introducing a new double ratio:

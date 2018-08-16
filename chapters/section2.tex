@@ -43,7 +43,7 @@ Figure~\ref{fig:zptdistri} shows the distribution of $z$ and $P_t$ of the neutra
   \centering     
   \subfigure[$z$ distribution of mesons]{\label{fig:pi0z}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_dataselection/Z_distri.pdf}}
   \subfigure[$P_t$ distribution of mesons]{\label{fig:pi0pt}\includegraphics[width=.48\textwidth,natwidth=600,natheight=400]{figure_dataselection/Pt_distri.pdf}}
-  \caption[Normalized kinematic distributions]{Normalized distribution of kinematic distributions with all event selection, fiducial requirements and the neutral meson reconstruction criteria (see section~\ref{sec:neutralmesonreconstruction}) applied. Left plot is the $z$ distribution of experimental data. The right plot is $P_t$ distribution. The $z$ distribution of the $\eta$ distribution is shifted with respect to the pions due to the higher mass and higher photon energy cut of the $\eta$. In ratios involving the $\eta$ we can remedy this by applying an appropriate $z$ cut on the pions as well.}
+  \caption[Normalized kinematic distributions]{Normalized distribution of kinematic distributions with all event selection, fiducial requirements and the neutral meson reconstruction criteria (see section~\ref{sec:neutralmesonreconstruction}) applied with the exception of the $z$ cut. Left plot is the $z$ distribution of experimental data. The right plot is $P_t$ distribution. The $z$ distribution of the $\eta$ distribution is shifted with respect to the pions due to the higher mass and higher photon energy cut of the $\eta$. In ratios involving the $\eta$ we can remedy this by applying an appropriate $z$ cut on the pions as well. As shown in the appendix Sec.~\ref{{sec:kinedistri_eta} the kinematic distributions of $\eta$ and pions is in good agreement for the same $z$ bin. }
   \label{fig:zptdistri}
 \end{figure}
 
@@ -326,13 +326,15 @@ kinematic variable & constraint   \\ \hline
 $E_\gamma$~($\pi^0$) & $E_\gamma >50$~MeV \\ \hline
 $E_\gamma$~($\eta$) & $E_\gamma >250$~MeV \\ \hline
 $z$  for hadrons forming double ratios &\multirow{2}{*}{$z>0.1$}\\
- that contain $\pi^0$\footnote{For the kinematic bins where $z$ is  integrated, the threshold is increased to $z>0.2$. More details can be found in section~\ref{sec:kinematicbins}.}&  \\ \hline
+ that contain $\pi^0$&  \\ \hline
 $z$ for hadrons forming double ratios that contain $\eta$,& \multirow{3}{*}{$z>0.3$} \\ accounting for the higher $\eta$ mass &\\and photon energy cut & \\ \hline
 $\gamma_{OA}$ (modulo $\pi$) & $<0.5$~rad \\ \hline
 $H_{OA}$ (modulo $\pi$) & $<0.3$~rad \\ \hline
 $\theta$ &  1.34~rad  --  2.03~rad  \\ \hline
 \end{tabular}
-\caption{Fiducial and energy constraints for $\pi^0$ and $\eta$.}
+\caption{Fiducial and energy constraints for $\pi^0$ and $\eta$.
+For the kinematic bins of $\pi^0$ asymmetries where $z$ is  integrated, the threshold is increased to $z>0.2$. More details can be found in section~\ref{sec:kinematicbins}.
+}
 \label{tab:constrain}
 \end{table}
 
